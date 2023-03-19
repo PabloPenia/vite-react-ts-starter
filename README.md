@@ -27,3 +27,12 @@ On your preferred CLI run:
 - Run tests: `yarn test` or `npm run test`.
 - Generate a new component: `yarn gen MyComponent` or `npm run gen MyComponent`.
 - Generate a new route: `yarn gen:route MyRoute` or `npm run gen:route MyRoute`.
+
+## Extra
+- Style ready, resets, fluidtypo, and more: check `src/theme` folder
+- Header component.
+- Theme switcher dark/light with context ready.
+- LazyLoad Wrapper
+- Loading Spinner
+- Routing with router dom and pre-configured routes.
+- Not Found Page

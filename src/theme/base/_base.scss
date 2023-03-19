@@ -1,0 +1,32 @@
+body {
+	font: {
+		family: var(--font__base);
+		size: var(--fsz__base);
+	}
+	line-height: var(--lh__base);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font__headings);
+	font-weight: 400;
+	text-transform: capitalize;
+}
+h1,
+h2 {
+	text-transform: uppercase;
+}
+h2 {
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+}
+svg {
+	fill: currentColor;
+	// stroke: var(--color__text2);
+}

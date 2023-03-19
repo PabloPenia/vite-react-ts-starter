@@ -1,0 +1,7 @@
+@use '../abstracts/mixin';
+.flex {
+	@include mixin.flex;
+}
+.sr-only {
+	@extend %sr-only;
+}

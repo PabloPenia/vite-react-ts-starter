@@ -1,0 +1,25 @@
+@use './colors';
+@use './fonts';
+:root {
+	// Schemes
+	@include colors.scheme;
+	[data-theme='dark'] {
+		color-scheme: dark;
+		@include colors.scheme--dark;
+	}
+	// Color composition
+	// transitions
+	--trans__on: 0.4s ease-out;
+	--trans__off: 0.4s ease-in;
+
+	// sizing / spacing
+	--sp__sides: 4%;
+	--sp__around: 2rem;
+	--lh__base: #{fonts.$lh__base};
+	--fsz__base: #{fonts.$fsz__base};
+	--fsz__small: #{fonts.$fsz__small};
+	// fonts
+	--font__base: #{fonts.$font__base};
+	--font__headings: #{fonts.$font__headings};
+	--font__brand: #{fonts.$font__brand};
+}

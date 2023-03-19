@@ -1,0 +1,14 @@
+@mixin scheme {
+	/* default theme (light) */
+	/* Define colors for light theme here */
+	--bg-color: #eee;
+	--txt-color: #222;
+	--txt-color--alt: #c8eefa;
+}
+
+@mixin scheme--dark {
+	/* Redefine colors for light theme here */
+	--bg-color: #222;
+	--txt-color: #eee;
+	--txt-color--alt: #203349;
+}

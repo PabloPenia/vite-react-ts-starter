@@ -1,0 +1,9 @@
+/* All layout styles should be imported here */
+// tweaked vite default styles
+#app {
+	height: 100%;
+	min-height: 100vh;
+	background: var(--bg-color);
+	color: var(--txt-color);
+	text-align: center;
+}

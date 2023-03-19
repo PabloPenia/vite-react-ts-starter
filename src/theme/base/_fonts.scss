@@ -1,0 +1,9 @@
+@use '../abstracts/functions/fluidTypo';
+// Families
+$font__base: 'Montserrat', sans-serif;
+$font__headings: 'Lato', sans-serif;
+$font__brand: 'Merienda', cursive;
+// Sizing
+$lh__base: fluidTypo.fluid(27, 34, 600, 1440);
+$fsz__base: fluidTypo.fluid(18, 22, 600, 1440);
+$fsz__small: 0.8em;

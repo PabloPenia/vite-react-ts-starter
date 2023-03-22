@@ -1,8 +1,12 @@
-import type { ReactNode } from 'react'
+import type { FC, ReactNode } from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from '~/context/theme.context'
 
-function AppWrapper({ children }: { children: ReactNode }): JSX.Element {
+interface AppWrapperComponent {
+	children: ReactNode
+}
+
+const AppWrapper: FC<AppWrapperComponent> = ({ children }) => {
 	const { theme } = useContext(ThemeContext)
 	return (
 		<main id='app' data-theme={theme}>

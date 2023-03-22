@@ -1,8 +1,11 @@
-import type { Dispatch, ReactNode, SetStateAction } from 'react'
+import type { Dispatch, FC, ReactNode, SetStateAction } from 'react'
 import { useEffect, useState, createContext } from 'react'
 
-type Theme = 'light' | 'dark'
+interface ThemeProviderProps {
+	children: ReactNode
+}
 
+type Theme = 'light' | 'dark'
 interface ThemeContextType {
 	theme: Theme
 	setTheme: Dispatch<SetStateAction<Theme>>
@@ -17,11 +20,7 @@ const defaultContext: ThemeContextType = {
 
 export const ThemeContext = createContext<ThemeContextType>(defaultContext)
 
-export default function ThemeProvider({
-	children,
-}: {
-	children: ReactNode
-}): JSX.Element {
+const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
 	const userTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
 		? 'dark'
 		: 'light'
@@ -41,3 +40,5 @@ export default function ThemeProvider({
 		</ThemeContext.Provider>
 	)
 }
+
+export default ThemeProvider

@@ -1,3 +1,4 @@
+import type { FC } from 'react'
 import { lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -12,7 +13,7 @@ const NotFound = lazy(
 )
 const Page = lazy(async () => await import('./routes/page/page.route'))
 
-const App = (): JSX.Element => {
+const App: FC = () => {
 	const views = [
 		{ route: '/', element: <Home /> },
 		{ route: '/page', element: <Page /> },

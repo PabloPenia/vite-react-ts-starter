@@ -1,8 +1,9 @@
+import type { FC } from 'react'
 import { useContext } from 'react'
 import { ThemeContext } from '~/context/theme.context'
 import './home.styles.scss'
 
-export default function Home(): JSX.Element {
+const Home: FC = () => {
 	const { theme, setTheme } = useContext(ThemeContext)
 	return (
 		<div className='l-home'>
@@ -30,3 +31,5 @@ export default function Home(): JSX.Element {
 		</div>
 	)
 }
+
+export default Home

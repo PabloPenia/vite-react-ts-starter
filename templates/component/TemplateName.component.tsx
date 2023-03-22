@@ -1,10 +1,14 @@
 // import './TemplateName.styles.scss'
-// type TemplateNameProps = {}
+import type { FC } from 'react'
 
-export default function TemplateName(/*	{}: TemplateNameProps	*/): JSX.Element {
-	return (
-		<div className='TemplateName'>
-			<h1>TemplateName</h1>
-		</div>
-	)
-}
+// interface TemplateNameProps {
+// 	// children: ReactNode
+// }
+
+const TemplateName: FC /* <TemplateNameProps> */ = (/* { children } */) => (
+	<div className='TemplateName'>
+		<h1>TemplateName</h1>
+	</div>
+)
+
+export default TemplateName

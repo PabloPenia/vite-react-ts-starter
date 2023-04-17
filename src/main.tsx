@@ -1,7 +1,7 @@
 import './theme/App.scss'
 import { createRoot } from 'react-dom/client'
 import { lazy, StrictMode } from 'react'
-import LazyLoad from './components/lazy-load/lazy-load.component'
+import LazyLoad from './components/helpers/lazy-load/lazy-load.component'
 
 const App = lazy(async () => await import('./App'))
 

@@ -1,6 +1,6 @@
 import type { FC, ReactNode } from 'react'
 import { Suspense } from 'react'
-import Loader from '../loader/loader.component'
+import Loader from '../../atoms/loader/loader.component'
 
 interface LazyLoadProps {
 	children: ReactNode

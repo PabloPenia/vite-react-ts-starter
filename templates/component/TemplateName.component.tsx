@@ -8,6 +8,7 @@ import type { FC } from 'react'
 const TemplateName: FC /* <TemplateNameProps> */ = (/* { children } */) => (
 	<div className='TemplateName'>
 		<h1>TemplateName</h1>
+		{/* {children} */}
 	</div>
 )
 

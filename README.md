@@ -2,6 +2,8 @@
 
 ## Yet another Frontend Starter Kit.
 
+[CHANGELOG](https://github.com/PabloPenia/vite-react-ts-starter/tree/main#changelog)
+
 - **Toolchain**: [ViteJs](https://vitejs.dev/ 'ViteJS documentation').
 - **Framework**: [ReactJs](https://reactjs.org 'React Documentation') - [Typescript](https://typescriptlang.org 'Typescript documentation').
 - **Linter**: [Eslint](https://eslint.org 'Eslint documentation') with [Javascript Standard Styleguide](https://standardjs.com/ 'JS Standard style documentation').

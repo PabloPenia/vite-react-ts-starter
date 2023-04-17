@@ -2,9 +2,10 @@ import type { FC } from 'react'
 import { lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import AppWrapper from './components/app-wrapper/app-wrapper.component'
-import LazyLoad from './components/lazy-load/lazy-load.component'
-import MasterHeader from './components/master-header/master-header.component'
+import AppWrapper from './components/layout/app-wrapper/app-wrapper.component'
+import LazyLoad from './components/helpers/lazy-load/lazy-load.component'
+import MainHeader from './components/layout/main-header/main-header.component'
+import MainFooter from './components/layout/main-footer/main-footer.component'
 import ThemeProvider from './context/theme.context'
 
 const Home = lazy(async () => await import('./routes/home/home.route'))
@@ -23,7 +24,7 @@ const App: FC = () => {
 		<ThemeProvider>
 			<BrowserRouter>
 				<AppWrapper>
-					<MasterHeader />
+					<MainHeader />
 					<Routes>
 						{views.map((view) => (
 							<Route
@@ -33,6 +34,7 @@ const App: FC = () => {
 							/>
 						))}
 					</Routes>
+					<MainFooter />
 				</AppWrapper>
 			</BrowserRouter>
 		</ThemeProvider>

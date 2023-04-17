@@ -1,6 +1,6 @@
 {
 	"name": "vite-react-ts-starter",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"author": {
 		"name": "Pablo Peña",
@@ -34,6 +34,8 @@
 		"gen:route": "npx generate-react-cli component --type=route"
 	},
 	"dependencies": {
+		"classnames": "^2.3.2",
+		"lodash": "^4.17.21",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.9.0"
@@ -41,6 +43,7 @@
 	"devDependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^14.0.0",
+		"@types/lodash": "^4.14.194",
 		"@types/react": "^18.0.27",
 		"@types/react-dom": "^18.0.10",
 		"@typescript-eslint/eslint-plugin": "^5.43.0",

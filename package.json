@@ -1,6 +1,6 @@
 {
-	"name": "data-viz-demos",
-	"version": "1.0.0",
+	"name": "vite-react-ts-starter",
+	"version": "1.0.1",
 	"license": "MIT",
 	"author": {
 		"name": "Pablo Peña",
@@ -9,9 +9,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/PabloPenia/data-viz-demos.git"
+		"url": "https://github.com/PabloPenia/vite-react-ts-starter.git"
 	},
-	"bugs": "https://github.com/PabloPenia/data-viz-demos/issues",
+	"bugs": "https://github.com/PabloPenia/vite-react-ts-starter/issues",
 	"description": "React-Typescript starter kit for Frontend development using Vite. Includes linting, formatting, unit testing and more tools.",
 	"keywords": [
 		"vite",
